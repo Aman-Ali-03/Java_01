@@ -4,12 +4,16 @@ import java.lang.*;
 public class Print_Pattern {
     public static void main(String[] args) {
         System.out.println("There is your pattern.");
-        int i;
         int j;
         int k;
-        for(i=0; i<6; i++){
-            System.out.println(i);
+        for(int i=0; i<6; i++){
+            for(k=i; k<6; k++){
+                System.out.print("&");
+            }
+            for(j=i; j>0; j--){
+                System.out.print(" ");
+            }
+            System.out.println("");
         }
-        
     }
 }
