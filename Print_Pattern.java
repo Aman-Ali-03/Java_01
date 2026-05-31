@@ -10,7 +10,7 @@ public class Print_Pattern {
             for(k=i; k<6; k++){
                 System.out.print("&");
             }
-            
+
             for(j=i; j>0; j--){
                 System.out.print(" ");
             }
