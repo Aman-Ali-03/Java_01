@@ -1,2 +1,2 @@
 # Java_01
-This repository contains my Java practice programs of "Iterative Statement".
+This repository contains my all Java practice programs.

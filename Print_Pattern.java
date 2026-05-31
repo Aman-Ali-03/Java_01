@@ -1,5 +1,5 @@
 package Java_01;
-import java.lang.*;
+
 
 public class Print_Pattern {
     public static void main(String[] args) {
