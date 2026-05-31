@@ -10,6 +10,7 @@ public class Factorial {
         int sum=1;
         for(int i=a; i>0; i--){
             sum = sum*i;
+            
             //System.out.println(i);
         }
         System.out.println("There Is Your Factorial :");
