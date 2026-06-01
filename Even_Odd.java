@@ -15,7 +15,5 @@ public class Even_Odd {
         else{
             System.out.println("Enter number is zero.");
         }
-
     }
-    
 }
