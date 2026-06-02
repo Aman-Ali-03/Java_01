@@ -15,13 +15,13 @@ public class Calculator{
                 System.out.println("Addition of your number : " + (first+second));
                 break;
             case '-':
-                System.out.println("Subtract first-second :" + (first-second));
+                System.out.println("Subtraction first-second : " + (first-second));
                 break;
             case '*':
                 System.out.println("Multiplication of your number : " + (first*second));
                 break;
             case '/':
-                System.out.println("Division first//second" + (first/second));
+                System.out.println("Division first/second : " + (first/second));
                 break;
             default:
                 System.out.println("Invalid operator");
