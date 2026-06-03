@@ -12,6 +12,6 @@ public class Area_of_Triangle {
         c=scan.nextInt();
         h=(a+b+c)/2f;
         area=Math.sqrt(h*(h-a)*(h-b)*(h-c));
-        System.out.println("Area = " + area);
+        System.out.println("Area of triangle= " + area);
     }
 }
