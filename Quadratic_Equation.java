@@ -1,7 +1,7 @@
 package Java_01;
 import java.util.Scanner;
 public class Quadratic_Equation {
-    static void main(String[] args) {
+    public static void main(String[] args) {
         Scanner scan = new Scanner (System.in);
         System.out.println("Enter the cofficent of a :");
         byte a = scan.nextByte();
