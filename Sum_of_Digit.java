@@ -11,6 +11,8 @@ public class Sum_of_Digit {
             sum = sum + rem;
             num = num / 10;
         }
+
+        
         System.out.println("The sum of the digits is: " + sum);
     }
 }
