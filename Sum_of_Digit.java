@@ -12,7 +12,7 @@ public class Sum_of_Digit {
             num = num / 10;
         }
 
-        
+
         System.out.println("The sum of the digits is: " + sum);
     }
 }
