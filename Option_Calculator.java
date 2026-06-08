@@ -29,7 +29,7 @@ public class Option_Calculator {
             default:
                 System.out.println("Invalid option");
         }
-
+        
     }
 
 }
