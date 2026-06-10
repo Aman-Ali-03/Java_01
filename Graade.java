@@ -5,6 +5,7 @@ public class Graade {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter your name :");
         String name = input.nextLine();
+        System.out.println("Hello "+ name);
         System.out.println("Enter your five subject marks :");
         short m1 = input.nextShort();
         short m2 = input.nextShort();
