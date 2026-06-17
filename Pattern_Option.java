@@ -38,7 +38,9 @@ public class Pattern_Option {
                 break;
             default:
                 System.out.println("Invalid choice");
-                main();
+                System.out.println("Printing Both Pattern :-");
+                square();
+                triangle();
         }
     }
 }
