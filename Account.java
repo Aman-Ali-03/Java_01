@@ -11,13 +11,11 @@ class Acc {
         this.name = name;
         Date = date;
         Account = account;
-        phono = phono;
         Address = address;
         Balance = balance;
     }
     Acc(String Date, String name){
         this.Date = Date;
-        name=name;
     }
 
     public String getName(){return name;}
@@ -45,5 +43,4 @@ public class Account {
         System.out.println("Second Account details:");
         a2.DisplayAccount();
     }
-
 }
