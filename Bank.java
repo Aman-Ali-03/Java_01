@@ -5,7 +5,15 @@ public class Bank {
         Scanner input = new Scanner(System.in);
         long balance =0;
         long cash;
+        System.out.println("Create your account.\n");
+        System.out.println("Enter your name :");
+        String name = input.nextLine();
+        System.out.println("Enter your mobile no. :");
+        long mobileNo = input.nextLong();
+        System.out.println("Your account created successfully.");
+        String temp = input.nextLine();
         while(true) {
+            String temp2 = input.nextLine();
             System.out.println("Select your language (Hindi/English):");
             String language = input.nextLine();
 
