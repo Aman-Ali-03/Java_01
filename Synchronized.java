@@ -5,6 +5,9 @@ class MyData {
         //synchronized (this) {
             for (byte i = 0; i < str.length(); i++) {
                 System.out.print(str.charAt(i));
+                try{Thread.sleep(1000);}catch(InterruptedException e){
+                    System.out.println(e.getMessage());
+                }
             }
         //}
     }
