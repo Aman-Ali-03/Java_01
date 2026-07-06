@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class Array_List {
     public static void main(String [] args){
         Scanner in = new Scanner(System.in);
+        //Checking how git help to maintain history or our program
         ArrayList<Integer> list = new ArrayList<>();
         System.out.println("Enter the size of the arraylist :");
         int size = in.nextInt();
@@ -14,6 +15,5 @@ public class Array_List {
             sum = sum + list.get(i);
         }
         System.out.println("The sum of the elements of the arraylist :" + sum);
-
     }
 }
