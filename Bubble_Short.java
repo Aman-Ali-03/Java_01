@@ -9,18 +9,24 @@ public class Bubble_Short
         shot(a);
         System.out.println(Arrays.toString(a));
     }
-    static void shot(int[] a)
+     static void shot(int[] a)
     {
+        boolean swap;
         int temp=0;
         for(int i=a.length; i>0; i--)
         {
+            swap=false;
             for(int j=0; j<i-1; j++)
             {
                 if(a[j]>a[j+1]){
                     temp = a[j];
                     a[j]=a[j+1];
                     a[j+1]=temp;
+                    swap=true;
                 }
+            }
+            if(!swap){
+                break;
             }
         }
     }
