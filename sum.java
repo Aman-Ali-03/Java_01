@@ -12,12 +12,12 @@ public class sum {
     static int[] sums(int[] a) {
         int[] n = new int[a.length];
         for (int i = 0; i < a.length; i++) {
-            n[i] = sum(a, i);
+            n[i] = sum_Array(a, i);
         }
         return n;
     }
 
-    static int sum(int[] a, int i) {
+    static int sum_Array(int[] a, int i) {
         int sum = 0;
         for (int j = 0; j <= i; j++) {
             sum += a[j];
