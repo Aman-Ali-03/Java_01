@@ -1,4 +1,4 @@
-package Java_01;
+package Java_01.Leet_Code_Problems;
 import java.util.Scanner;
 public class L9
 {
