@@ -1,0 +1,30 @@
+package Java_01.Leet_Code_Problems;
+
+public class L540
+{
+    public static void main(String[] args)
+    {
+        int[] a = {3,3,7,7,10,11,11};
+        System.out.println("Single number is " + singleNonDuplicate(a));
+    }
+    static int singleNonDuplicate(int[] nums) {
+        int start = 0;
+        int end = nums.length - 1;
+        while (start < end) {
+            int mid = start + (end - start) / 2;
+
+            // Make mid even
+            if (mid % 2 == 1) {
+                mid--;
+            }
+
+            if (nums[mid] == nums[mid + 1]) {
+                start = mid + 2;
+            } else {
+                end = mid;
+            }
+        }
+
+        return nums[start];
+    }
+}
