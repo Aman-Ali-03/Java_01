@@ -14,7 +14,7 @@ class node
         this.previous = null;
     }
 }
-public class Doubly_Linked_list
+public class Doubly_Linked_List
 {
     static Scanner sc = new Scanner(System.in);
     static node head,last;
@@ -38,15 +38,86 @@ public class Doubly_Linked_list
         }
     }
 
-    static void Add_last()
-    {
-        
+    static void Add_last() {
+        System.out.print("Enter your element: ");
+        int data = sc.nextInt();
+        node newnode = new node(data);
+        if (last == null) {
+            head = newnode;
+            last = newnode;
+        }
+        else
+        {
+            newnode.next = last;
+            last.previous = newnode;
+            last = newnode;
+        }
     }
-    
-    static void Add_per_loc(){}
-    static void delete_start(){}
-    static void delete_end(){}
-    static void delete_per_loc(){}
+
+    static void Add_per_loc()
+    {
+        System.out.print("Enter the position: ");
+        int pos = sc.nextInt();
+        System.out.print("Enter your element: ");
+        int data = sc.nextInt();
+        node newnode = new node(data);
+        node temp = head;
+        for(int i=1; i<pos-1; i++)
+        {
+            temp = temp.previous;
+        }
+        newnode.next = temp;
+        newnode.previous = temp.previous;
+        temp.previous.next = newnode;
+        temp.previous = newnode;
+    }
+
+    static void delete_start()
+    {
+        if(head == null)
+        {
+            System.out.print("Empty Linked List.");
+        }
+        else
+        {
+            head.previous.next = null;
+            head = head.previous;
+        }
+    }
+
+    static void delete_end()
+    {
+        if(last == null)
+        {
+            System.out.print("Empty Linked List.");
+        }
+        else
+        {
+            last.next.previous = null;
+            last = last.next;
+
+        }
+    }
+
+    static void delete_per_loc()
+    {
+        if(head == null)
+        {
+            System.out.println("Linked List doesn't have node.");
+        }
+        else
+        {
+            System.out.print("Enter the position: ");
+            int pos = sc.nextInt();
+            node temp = head;
+            for(int i=2; i<pos; i++)
+            {
+                temp = temp.previous;
+            }
+            temp.previous = temp.previous.previous;
+            temp.previous.next = temp;
+        }
+    }
 
     static void display()
     {
@@ -63,14 +134,43 @@ public class Doubly_Linked_list
             while(temp!=null)
             {
                 System.out.print(temp.data + "  ");
-                temp = temp.next;
+                temp = temp.previous;
             }
             System.out.println("\n===============================================================================");
         }
     }
 
-    static void count(){}
-    static void search(){}
+    static void count()
+    {
+        node temp = head;
+        int counter = 0;
+        while(temp != null)
+        {
+            temp = temp.next;
+            counter += 1;
+        }
+        System.out.print(counter + " Node at Linked list.\n");
+    }
+
+    static void search()
+    {
+        System.out.print("Enter the element to search the node.");
+        int search_for = sc.nextInt();
+        node temp = head;
+        int Node_position = 0;
+        while(temp != null)
+        {
+            Node_position += 1;
+            temp = temp.next;
+            if(temp.data == search_for)
+            {
+                System.out.print("At node NO. " + Node_position);
+                return;
+            }
+        }
+        System.out.print("Element not found at Linked List.");
+    }
+
 
     static void main(String[] args)
     {
