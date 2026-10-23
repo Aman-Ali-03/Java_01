@@ -1,4 +1,4 @@
-package Java_01;
+package Java_01.File;
 import java.io.FileNotFoundException;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -15,6 +15,7 @@ public class Read_File {
             String re = new String(b);
 
             System.out.println(re);
+            fil.close();
         }
         catch(FileNotFoundException e){
             System.out.println(e.getMessage());

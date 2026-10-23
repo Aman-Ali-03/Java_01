@@ -1,4 +1,4 @@
-package Java_01;
+package Java_01.File;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -10,6 +10,7 @@ public class Write_File {
             FileOutputStream file = new FileOutputStream("D:/test.txt");
             String str = "Hello There is your File.";
             file.write(str.getBytes());
+            file.close();
         }
         catch(FileNotFoundException e){
             System.out.println(e.getMessage());
@@ -17,5 +18,6 @@ public class Write_File {
         catch (IOException e){
             System.out.println(e.getMessage());
         }
-    }
+        
+   }
 }
